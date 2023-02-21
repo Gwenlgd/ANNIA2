@@ -15,5 +15,11 @@
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  background-color: $white;
   // background-image: url( 'path/images/WAVES/background.svg' );
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkgreen;
   }
