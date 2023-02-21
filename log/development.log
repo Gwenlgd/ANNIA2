@@ -1,0 +1,104 @@
+Started GET "/" for ::1 at 2023-02-16 02:34:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 1.0ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 712.7ms | Allocations: 100283)
+Completed 200 OK in 720ms (Views: 716.6ms | ActiveRecord: 0.0ms | Allocations: 103434)
+
+
+Started GET "/app/views/pages/lieu.html.erb" for ::1 at 2023-02-16 02:34:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/pages/lieu.html.erb"):
+  
+Started GET "/Users/gwen/code/Gwenlgd/ANNIA2/app/views/pages/lieu.html.erb" for ::1 at 2023-02-16 02:34:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Users/gwen/code/Gwenlgd/ANNIA2/app/views/pages/lieu.html.erb"):
+  
+Started GET "/app/views/pages/trajet.html.erb" for ::1 at 2023-02-16 02:34:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/views/pages/trajet.html.erb"):
+  
+Started GET "/Users/gwen/code/Gwenlgd/ANNIA2/app/views/pages/trajet.html.erb" for ::1 at 2023-02-16 02:34:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Users/gwen/code/Gwenlgd/ANNIA2/app/views/pages/trajet.html.erb"):
+  
+Started GET "/trajet" for ::1 at 2023-02-16 02:34:40 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 1.6ms | Allocations: 198)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 9367)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 9652)
+
+
+Started GET "/" for ::1 at 2023-02-16 02:37:22 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 1.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 9419)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 10089)
+
+
+Started GET "/trajet" for ::1 at 2023-02-16 02:37:24 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1187)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1267)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1529)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>TRAJET</h1>
+
+      <%= link_to "Index", root_path %>
+
+      <%= simple_form_for do |f| %>
+        <%= f.input, label: "Combien?"%>
+        <%= f.input, label: "Combien?"%>
+
+        <%= f.button :submit%>
+      <% end %>
+
+):
+1:    <h1>TRAJET</h1>
+2:    
+3:          <%= link_to "Index", root_path %>
+4:    
+5:          <%= simple_form_for do |f| %>
+6:            <%= f.input, label: "Combien?"%>
+7:            <%= f.input, label: "Combien?"%>
+8:    
+9:            <%= f.button :submit%>
+10:          <% end %>
+  
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:6: syntax error, unexpected label, expecting '='
+app/views/pages/trajet.html.erb:7: syntax error, unexpected label, expecting '='
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6717871542242810145)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateVoitures (20230221014449)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (77.0ms)[0m  [1m[35mCREATE TABLE "voitures" ("id" bigserial primary key, "nom" character varying, "ville" character varying, "lieu_rdv" text, "nb_place" integer, "heure_aller" time, "date_aller" date, "heure_retour" time, "date_retour" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230221014449"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTrains (20230221015000)
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "trains" ("id" bigserial primary key, "nom" character varying, "ville_depart" character varying, "ville_arrivee" character varying, "heure_aller" time, "date_aller" date, "heure_retour" time, "date_retour" time, "note" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230221015000"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6717871542242810145)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
