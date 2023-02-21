@@ -1,4 +1,38 @@
+// PAGE TRAJET
+.venir {
+  text-align: center;
+}
+.cards-page-trajet {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
 
+.card-category {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px $green;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .fa-solid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 100px;
+    color: $green;
+  }
+}
+
+// PAGE INDEX VOITURE & TRAIN
 .all-cards {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -6,8 +40,6 @@
 }
 
 .cards-trajet {
-
-
   margin: 5px;
   height: 400px;
   width: 400px;

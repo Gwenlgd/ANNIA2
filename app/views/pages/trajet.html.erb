@@ -2,12 +2,22 @@
 
   <%= link_to "Index", root_path %>
 
-  <%= link_to new_train_path do %>
-    <p>Je viens en train (création form)</p>
-  <% end %>
-  <%= link_to new_voiture_path do %>
-    <p>Je viens en voiture (création form)</p>
-  <% end %>
+  <div class="venir">
+  <h2>Je viens en </h2>
+  </div>
+
+  <div class="cards-page-trajet">
+    <div class="card-category">
+      <%= link_to new_train_path do %>
+        <i class="fa-solid fa-car"></i>
+      <% end %>
+    </div>
+    <div class="card-category">
+      <%= link_to new_voiture_path do %>
+        <i class="fa-solid fa-train-subway"></i>
+      <% end %>
+    </div>
+  </div>
 
   <%= link_to trains_path do %>
     <p>Tous les trajets en train (index)</p>
