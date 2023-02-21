@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/programme', to: 'pages#programme'
   get '/affaires', to: 'pages#affaires'
 
+  resources :trains
+  resources :voitures
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
