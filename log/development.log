@@ -112,3 +112,124 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 0.0ms | Allocations: 51613)
 
 
+Started GET "/" for ::1 at 2023-02-21 09:00:48 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 294)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | Allocations: 57387)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 59607)
+
+
+Started GET "/trajet" for ::1 at 2023-02-21 09:00:52 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 1.9ms | Allocations: 478)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 9743)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 10042)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:01:02 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 30.9ms | Allocations: 35937)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 44591)
+Completed 200 OK in 61ms (Views: 36.3ms | ActiveRecord: 10.2ms | Allocations: 53097)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:08:08 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 35.3ms | Allocations: 29112)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 38117)
+Completed 200 OK in 54ms (Views: 47.3ms | Allocations: 38979)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:08:58 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 55.0ms | Allocations: 28498)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3340.3ms | Allocations: 102887)
+Completed 200 OK in 3341ms (Views: 3340.8ms | Allocations: 103168)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:09:41 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 36.6ms | Allocations: 28518)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3223.4ms | Allocations: 102225)
+Completed 200 OK in 3225ms (Views: 3224.2ms | Allocations: 102482)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:13:02 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 29.3ms | Allocations: 28524)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3336.7ms | Allocations: 102045)
+Completed 200 OK in 3338ms (Views: 3337.3ms | Allocations: 102302)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:13:15 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 25.7ms | Allocations: 28531)
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:13:17 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 28542)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3245.9ms | Allocations: 146892)
+Completed 200 OK in 3247ms (Views: 3246.3ms | Allocations: 147158)
+
+
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 451.8ms | Allocations: 53961)
+Completed 200 OK in 452ms (Views: 452.0ms | Allocations: 54217)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:13:38 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 20.2ms | Allocations: 28516)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3229.7ms | Allocations: 101882)
+Completed 200 OK in 3231ms (Views: 3230.1ms | Allocations: 102142)
+
+
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:14:05 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 28512)
+Started GET "/trajet/trains/new" for ::1 at 2023-02-21 09:14:08 +0100
+Processing by TrainsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering trains/new.html.erb within layouts/application
+  Rendered trains/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 28490)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 3253.8ms | Allocations: 146829)
+Completed 200 OK in 3256ms (Views: 3254.6ms | Allocations: 147085)
+
+
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 456.8ms | Allocations: 53893)
+Completed 200 OK in 457ms (Views: 456.9ms | Allocations: 54149)
+
+
