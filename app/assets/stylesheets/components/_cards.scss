@@ -20,6 +20,12 @@
     text-decoration: none;
   }
 
+  p {
+    text-align: center;
+    margin-top: 5px;
+    color: $green;
+  }
+
   .fa-solid {
     display: grid;
     grid-template-columns: auto;
@@ -30,13 +36,18 @@
   }
 }
 
-.card-category:hover {
-  background: $green;
-}
-.fa-solid:hover {
-  background: $green;
-  color: $white;
-}
+  .card-category:hover {
+    background: $green;
+
+    p {
+      color: $white;
+    }
+    .fa-solid {
+      background: $green;
+      color: $white;
+    }
+  }
+
 
 // PAGE INDEX VOITURE & TRAIN
 .all-cards {
