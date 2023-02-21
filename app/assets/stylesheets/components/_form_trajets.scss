@@ -1,8 +1,75 @@
 .form-trajet {
-  margin: 0px 100px 0px 100px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  background-color: $green;
+  padding: 25px;
+  border-radius: 2px;
 
+    .form-control {
+      width: 600px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid;
+      border-radius: 0px;
+      // pour enlever le bord bleu quand sélection de la case
+      box-shadow: none;
+    }
 
-  .simple-form .mb-3 .form-control {
-  background-color: red;
   }
+
+  .form-select {
+    width: 600px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+  }
+
+  #voiture_heure_retour {
+    height: 60px;
+  }
+
+  #train_heure_retour {
+    height: 60px;
+  }
+
+  .form-select:focus {
+    box-shadow: none;
+    border-bottom: 1px solid;
 }
+
+  .form-select:active {
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-bottom-color: $green;
+  }
+  .col-one {
+    margin: 0px 20px 0px 0px;
+  }
+  .col-two {
+    margin: 0px 0px 0px 20px;
+    border-left: 2px;
+    border-color: red;
+  }
+
+// CENTRER LE BOUTON
+  .btn-submit-form {
+    align-self: center;
+    margin-top: 20px;
+    width: max-content;
+    border: 1px solid;
+    border-radius: 2px;
+
+  }
+
+  .btn-submit-form:hover {
+    color: $white;
+    background-color: $green;
+    align-self: center;
+    margin-top: 20px;
+    width: max-content;
+    border: 1px solid
+  }
