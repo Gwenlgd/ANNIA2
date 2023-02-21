@@ -1,13 +1,13 @@
 <h2>Je viens en train</h2>
 
 <%= simple_form_for(@train, data: {turbo: false}) do |f| %>
-      <%= f.input :nom %>
-      <%= f.input :ville_depart %>
-      <%= f.input :ville_arrivee %>
-      <%= f.input :date_aller, as: :date, html5: true %>
-      <%= f.input :heure_aller, as: :time, html5: true %>
-      <%= f.input :date_retour, as: :date, html5: true %>
-      <%= f.input :heure_retour, as: :time, html5: true %>
-      <%= f.input :note %>
+      <%= f.input :nom, label: "Quel est ton prénom/nom ?" %>
+      <%= f.input :ville_depart, label: "De quelle ville pars-tu ?" %>
+      <%= f.input :ville_arrivee, label: "Quelle est la ville d'arrivée ?" %>
+      <%= f.input :date_aller, as: :date, html5: true, label: "Quel jour arrives-tu ?" %>
+      <%= f.input :heure_aller, as: :time, html5: true, label: "A quelle heure est prévue l'arrivée du train ?" %>
+      <%= f.input :date_retour, as: :date, html5: true, label: "Quel jour repars-tu ?" %>
+      <%= f.input :heure_retour, as: :time, html5: true, label: "A quelle heure est ton train de retour ?" %>
+      <%= f.input :note, label: "Infos complémentaires" %>
       <%= f.button :submit%>
     <% end %>
