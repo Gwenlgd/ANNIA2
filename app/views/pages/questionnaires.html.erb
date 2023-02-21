@@ -1,0 +1,24 @@
+<h2>On a besoin de quelques informations</h2>
+<p>L'organisation du week end continue et pour que ce soit aussi parfait que possible, nous avons besoin d'informations complémentaires</p>
+
+
+<h3>Section Food</h3>
+      <%= link_to new_food_path do %>
+        <h3>Food Ici</h3>
+      <% end %>
+
+<h3>Section trajet</h3>
+ <div class="cards-page-trajet">
+    <div class="card-category">
+      <%= link_to new_voiture_path do %>
+        <i class="fa-solid fa-car"></i>
+        <p>Voiture</p>
+      <% end %>
+    </div>
+    <div class="card-category">
+      <%= link_to new_voiture_path do %>
+        <i class="fa-solid fa-train-subway"></i>
+        <p>Train</p>
+      <% end %>
+    </div>
+  </div>
