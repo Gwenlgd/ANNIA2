@@ -1,3 +1,9 @@
 <h1>TRAJET</h1>
 
       <%= link_to "Index", root_path %>
+
+      <%= simple_form_for do |f| %>
+        <%= f.input, label: "Combien?"%>
+        <%= f.input, label: "Combien?"%>
+        <%= f.button :submit%>
+      <% end %>
