@@ -5,6 +5,12 @@ Rails.application.routes.draw do
   get '/programme', to: 'pages#programme'
   get '/affaires', to: 'pages#affaires'
 
+
+  scope path: "/trajet" do
+    resources :trains
+    resources :voitures
+  end
+
   resources :trains
   resources :voitures
 

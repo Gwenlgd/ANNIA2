@@ -1,0 +1,17 @@
+<h3> INDEX TRAINS </h3>
+
+  <div class="all-cards"></div>
+    <% @trains.each do |train|  %>
+      <div class="cards-trajet">
+        <ul><%= train.nom %></ul>
+        <ul><%= train.ville_depart %></ul>
+        <ul><%= train.ville_arrivee %></ul>
+        <ul><%= train.heure_aller %></ul>
+        <ul><%= train.date_aller %></ul>
+        <ul><%= train.heure_retour %></ul>
+        <ul><%= train.date_retour %></ul>
+        <ul><%= train.note %></ul>
+        <br> <br>
+      </div>
+    <% end %>
+  </div>

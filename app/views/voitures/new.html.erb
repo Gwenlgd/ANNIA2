@@ -1,0 +1,13 @@
+<h2>Je viens en voiture</h2>
+
+<%= simple_form_for(@voiture, data: {turbo: false}) do |f| %>
+      <%= f.input :nom %>
+      <%= f.input :ville %>
+      <%= f.input :lieu_rdv %>
+      <%= f.input :nb_place %>
+      <%= f.input :date_aller %>
+      <%= f.input :heure_aller %>
+      <%= f.input :date_retour %>
+      <%= f.input :heure_retour %>
+      <%= f.button :submit%>
+    <% end %>

@@ -1,9 +1,18 @@
 <h1>TRAJET</h1>
 
-      <%= link_to "Index", root_path %>
+  <%= link_to "Index", root_path %>
 
-      <%= simple_form_for do |f| %>
-        <%= f.input, label: "Combien?"%>
-        <%= f.input, label: "Combien?"%>
-        <%= f.button :submit%>
-      <% end %>
+  <%= link_to new_train_path do %>
+    <p>Je viens en train (création form)</p>
+  <% end %>
+  <%= link_to new_voiture_path do %>
+    <p>Je viens en voiture (création form)</p>
+  <% end %>
+
+  <%= link_to trains_path do %>
+    <p>Tous les trajets en train (index)</p>
+  <% end %>
+
+  <%= link_to voitures_path do %>
+    <p>Tous les trajets en voiture (index)</p>
+  <% end %>
