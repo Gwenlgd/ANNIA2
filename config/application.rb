@@ -13,6 +13,18 @@ module ANNIA2
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+
+    # Use html5 date inputs by default, use html5: false to force
+    # the use of multiple selects
+    class DateTimeInput < SimpleForm::Inputs::DateTimeInput
+      private
+
+      def use_html5_inputs?
+        input_options.fetch(:html5, true)
+      end
+    end
+
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
