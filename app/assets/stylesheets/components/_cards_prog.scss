@@ -12,10 +12,11 @@
 
 .day-left {
   height: 200px;
-  width: 200px;
-  border-radius: 50%;
-
-  margin-right: 10px;
+  width: 230px;
+  border-radius: 30%;
+  // MOINS DE MARGIN?
+  margin-right: 80px;
+  padding: 5px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
@@ -36,7 +37,7 @@
 
 .prog-left {
   height: 200px;
-  width: 800px;
+  width: 900px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
@@ -50,7 +51,7 @@
 
 .prog-right {
   height: 200px;
-  width: 800px;
+  width: 1000px;
   background: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: flex;
