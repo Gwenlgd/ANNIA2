@@ -8,10 +8,55 @@
 
 
 .list-one {
+  margin: 30px;
   width: 500px;
+  padding: 50px 0px 5px 21px;
+  background-color: $green;
+  border-radius: 5px;
+
+    // .rect {
+    //   width: 490px;
+    //   display: block;
+    //   background-color: #344A3C;
+    //   padding: 45px;
+    //   margin: -33px;
+    //   border-radius: 5px;
+    //   text-align: center;
+    // }
+
+  // ul {
+  //   display: grid;
+  //   grid-template-columns: auto auto auto;
+  //   justify-content: center;
+  // }
+
+  // li {
+  //   height: 150px;
+  //   width: 150px;
+  //   border-radius: 50%;
+  //   border: 1px solid;
+  //   padding: 45px;
+  //   background-color: white;
+  //   margin: 5px;
+  //   text-align: center;
+  // }
+}
+
+.rect {
+  width: 490px;
+  display: block;
+  background-color: #344A3C;
+  padding: 45px;
+  margin: -33px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .list-two {
+  margin: 30px;
   width: 500px;
+  padding: 50px 0px 5px 21px;
+  background-color: $green;
+  border-radius: 5px;
 
 }
