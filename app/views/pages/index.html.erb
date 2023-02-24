@@ -1,8 +1,35 @@
 <%# <h1>Hello INDEX IN PAGES</h1>
 
 <h2>index.html.erb</h2> %>
-
+<%#  ENLEVER NAVBAR SUR CETTE PAGE? %>
 <h2>INFOS : </h2>
+  <div class="lieu-secret">
+    <h3>Patience... On garde encore un peu la surprise</h3>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("blur1.png", :class => "style_image") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("blur2.png", :class => "style_image") %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("blur3.png", :class => "style_image")%>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("blur4.png", :class => "style_image") %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
 
 <%# SECTION 1 %>
 <h3>Ce que comprend les 250 euros</h3>
