@@ -1,0 +1,14 @@
+<h2>INDEX FOOD</h2>
+
+
+  <div class="all-cards"></div>
+    <% @foods.each do |food|  %>
+      <div class="cards-trajet">
+        <ul><%= food.nom %></ul>
+        <ul><%= food.contraintes %></ul>
+        <ul><%= food.bring %></ul>
+        <ul><%= food.parts %></ul>
+        <br> <br>
+      </div>
+    <% end %>
+  </div>

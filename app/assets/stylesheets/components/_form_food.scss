@@ -1,0 +1,111 @@
+.form-food {
+  margin-top: 10px;
+  width: 800px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: $lightgreen;
+  padding: 25px;
+  border-radius: 5px;
+
+  .form-food-size {
+    width: 500px;
+    align-self: center;
+    justify-content: center;
+  }
+
+    .form-control {
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+      // pour enlever le bord bleu quand sélection de la case
+      box-shadow: none;
+      background-image: none;
+    }
+
+    .form-select {
+      // width: 600px;
+      background-color: $green;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+
+  // RADIO BUTTONS :
+
+  .category-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    margin: 10px 0px 10px 0px;
+    flex: 0 0 30%;
+  }
+
+  .category-selector {
+    position: absolute;
+    transform: scale(0);
+  }
+
+  .category-selector + label {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    // font-size: 12px;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid $lightgreen;
+    border-radius: 5px;
+    background-color: $green;
+  }
+
+  .category-selector:checked + label {
+    color: $green !important;
+    background-color: $lightred;
+  }
+
+
+
+  // .form-select:focus {
+  //   box-shadow: none;
+  //   border-bottom: none;
+  // }
+
+  // .form-select select::after {
+  //   background-color: red;
+  //   box-shadow: none;
+  //   border-bottom: none;
+  // }
+
+  // PAS UTILE?
+  // .form-select:active {
+  //   box-shadow: none;
+  //   border: none;
+  // }
+
+
+
+
+
+
+// CENTRER LE BOUTON
+.btn-submit-form {
+  color: $black;
+  background-color: $green;
+  align-self: center;
+  margin-top: 20px;
+  width: max-content;
+  border-radius: 5px;
+
+}
+
+.btn-submit-form:hover {
+  color: $white;
+  background-color: $green;
+  align-self: center;
+  margin-top: 20px;
+  width: max-content;
+}

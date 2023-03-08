@@ -3,28 +3,28 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  background-color: $green;
+  background-color: $lightgreen;
   padding: 25px;
-  border-radius: 2px;
+  border-radius: 5px;
 
+  // LEFT SIDE
     .form-control {
       width: 600px;
-      background-color: transparent;
+      background-color: $green;
       border: none;
-      border-bottom: 1px solid;
-      border-radius: 0px;
+      border-radius: 5px;
       // pour enlever le bord bleu quand sélection de la case
       box-shadow: none;
     }
 
   }
-
+  // RIGHT SIDE
   .form-select {
     width: 600px;
-    background-color: transparent;
+    background-color: $green;
     border: none;
-    border-bottom: 1px solid;
-    border-radius: 0px;
+    border-radius: 5px;
+    background-image: none;
   }
 
   #voiture_heure_retour {
@@ -37,15 +37,16 @@
 
   .form-select:focus {
     box-shadow: none;
-    border-bottom: 1px solid;
+    border-bottom: none;
 }
 
   .form-select:active {
     box-shadow: none;
     border: none;
-    border-bottom: 1px solid;
+    border-bottom: none;
     border-bottom-color: $green;
   }
+
   .col-one {
     margin: 0px 20px 0px 0px;
   }
@@ -58,11 +59,12 @@
 
 // CENTRER LE BOUTON
   .btn-submit-form {
+    color: $black;
+    background-color: $lightgreen;
     align-self: center;
     margin-top: 20px;
     width: max-content;
-    border: 1px solid;
-    border-radius: 2px;
+    border-radius: 5px;
 
   }
 
@@ -72,5 +74,4 @@
     align-self: center;
     margin-top: 20px;
     width: max-content;
-    border: 1px solid
   }

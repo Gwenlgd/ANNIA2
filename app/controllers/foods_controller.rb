@@ -2,8 +2,7 @@ class FoodsController < ApplicationController
 
   def index
     @foods = Food.all
-    @food = Food.find(params[:id])
-
+    # @food = Food.find(params[:id])
   end
 
   def show
@@ -24,6 +23,6 @@ class FoodsController < ApplicationController
   end
 
   def food_params
-    params.require(:food).permit(:contraintes, :bring, :quantites)
+    params.require(:food).permit(:nom, :contraintes, :bring, :parts)
   end
 end
