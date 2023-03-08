@@ -265,3 +265,450 @@ Migrating to CreateFoods (20230221145554)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6717871542242810145)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-03-08 13:59:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 146.4ms | Allocations: 61586)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 156.4ms | Allocations: 71607)
+Completed 200 OK in 160ms (Views: 158.2ms | ActiveRecord: 0.0ms | Allocations: 73827)
+
+
+Started GET "/blur2.png" for ::1 at 2023-03-08 13:59:33 +0100
+Started GET "/..." for ::1 at 2023-03-08 13:59:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/trajet" for ::1 at 2023-03-08 13:59:43 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 2.1ms | Allocations: 483)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 9736)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 10023)
+
+
+Started GET "/..." for ::1 at 2023-03-08 13:59:43 +0100
+Started GET "/blur2.png" for ::1 at 2023-03-08 13:59:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+Started GET "/programme" for ::1 at 2023-03-08 13:59:45 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.8ms | Allocations: 206)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 9379)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 9623)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:00:19 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 1.9ms | Allocations: 168)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 9352)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 9595)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:00:23 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 2.0ms | Allocations: 175)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 9329)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 9571)
+
+
+Started GET "/questionnaires" for ::1 at 2023-03-08 14:00:31 +0100
+Processing by PagesController#questionnaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/questionnaires.html.erb within layouts/application
+  Rendered pages/questionnaires.html.erb within layouts/application (Duration: 1.6ms | Allocations: 347)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 9541)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 9784)
+
+
+Started GET "/lieu" for ::1 at 2023-03-08 14:00:33 +0100
+Processing by PagesController#lieu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/lieu.html.erb within layouts/application
+  Rendered pages/lieu.html.erb within layouts/application (Duration: 1.9ms | Allocations: 156)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 9316)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 9561)
+
+
+Started GET "/lieu" for ::1 at 2023-03-08 14:00:37 +0100
+Processing by PagesController#lieu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/lieu.html.erb within layouts/application
+  Rendered pages/lieu.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9207)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 9449)
+
+
+Started GET "/" for ::1 at 2023-03-08 14:00:37 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2135)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 11169)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 11411)
+
+
+Started GET "/..." for ::1 at 2023-03-08 14:00:37 +0100
+Started GET "/blur2.png" for ::1 at 2023-03-08 14:00:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+Started GET "/blur2.png" for ::1 at 2023-03-08 14:28:46 +0100
+Started GET "/trajet" for ::1 at 2023-03-08 14:28:46 +0100
+Started GET "/..." for ::1 at 2023-03-08 14:28:46 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 1.3ms | Allocations: 150)
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 117.8ms | Allocations: 47989)
+Completed 200 OK in 131ms (Views: 127.6ms | Allocations: 49072)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:28:47 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 9175)
+Completed 200 OK in 23ms (Views: 22.5ms | Allocations: 9415)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:28:48 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 9180)
+Completed 200 OK in 21ms (Views: 20.5ms | Allocations: 9420)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:28:49 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9190)
+Completed 200 OK in 15ms (Views: 15.1ms | Allocations: 9429)
+
+
+Started GET "/questionnaires" for ::1 at 2023-03-08 14:28:52 +0100
+Processing by PagesController#questionnaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/questionnaires.html.erb within layouts/application
+  Rendered pages/questionnaires.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9284)
+Completed 200 OK in 16ms (Views: 16.0ms | Allocations: 9523)
+
+
+Started GET "/lieu" for ::1 at 2023-03-08 14:28:54 +0100
+Processing by PagesController#lieu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/lieu.html.erb within layouts/application
+  Rendered pages/lieu.html.erb within layouts/application (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 9195)
+Completed 200 OK in 24ms (Views: 23.6ms | Allocations: 9435)
+
+
+Started GET "/" for ::1 at 2023-03-08 14:28:56 +0100
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2134)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 11172)
+Completed 200 OK in 32ms (Views: 32.2ms | Allocations: 11412)
+
+
+Started GET "/blur2.png" for ::1 at 2023-03-08 14:28:56 +0100
+Started GET "/..." for ::1 at 2023-03-08 14:28:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/..." for ::1 at 2023-03-08 14:32:59 +0100
+Started GET "/blur2.png" for ::1 at 2023-03-08 14:32:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+Started GET "/questionnaires" for ::1 at 2023-03-08 14:33:11 +0100
+Processing by PagesController#questionnaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/questionnaires.html.erb within layouts/application
+  Rendered pages/questionnaires.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+Started GET "/..." for ::1 at 2023-03-08 14:33:11 +0100
+Started GET "/blur2.png" for ::1 at 2023-03-08 14:33:11 +0100
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 11435)
+Completed 200 OK in 48ms (Views: 47.4ms | Allocations: 25586)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/blur2.png"):
+  
+Started GET "/trajet" for ::1 at 2023-03-08 14:33:12 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9319)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 9559)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:33:19 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 9168)
+Completed 200 OK in 21ms (Views: 20.6ms | Allocations: 9407)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:33:20 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9173)
+Completed 200 OK in 17ms (Views: 16.4ms | Allocations: 9413)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:33:21 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 9166)
+Completed 200 OK in 15ms (Views: 15.0ms | Allocations: 9405)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:33:22 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 9211)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 9451)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:33:22 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9160)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 9399)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:33:25 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9203)
+Completed 200 OK in 16ms (Views: 15.8ms | Allocations: 9443)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:33:27 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 9178)
+Completed 200 OK in 17ms (Views: 16.9ms | Allocations: 9417)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:33:31 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 9166)
+Completed 200 OK in 17ms (Views: 17.1ms | Allocations: 9406)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:33:32 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 9214)
+Completed 200 OK in 12ms (Views: 11.8ms | Allocations: 9454)
+
+
+Started GET "/programme" for ::1 at 2023-03-08 14:33:33 +0100
+Processing by PagesController#programme as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/programme.html.erb within layouts/application
+  Rendered pages/programme.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9174)
+Completed 200 OK in 16ms (Views: 16.0ms | Allocations: 9413)
+
+
+Started GET "/trajet" for ::1 at 2023-03-08 14:33:34 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9314)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 9554)
+
+
+Started GET "/questionnaires" for ::1 at 2023-03-08 14:33:35 +0100
+Processing by PagesController#questionnaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/questionnaires.html.erb within layouts/application
+  Rendered pages/questionnaires.html.erb within layouts/application (Duration: 0.3ms | Allocations: 118)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9282)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 9521)
+
+
+Started GET "/trajet" for ::1 at 2023-03-08 14:33:38 +0100
+Processing by PagesController#trajet as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/trajet.html.erb within layouts/application
+  Rendered pages/trajet.html.erb within layouts/application (Duration: 0.3ms | Allocations: 150)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9304)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 9543)
+
+
+Started GET "/questionnaires" for ::1 at 2023-03-08 14:33:39 +0100
+Processing by PagesController#questionnaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/questionnaires.html.erb within layouts/application
+  Rendered pages/questionnaires.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 9273)
+Completed 200 OK in 15ms (Views: 15.1ms | Allocations: 9512)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:33:40 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9214)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 9454)
+
+
+Started GET "/lieu" for ::1 at 2023-03-08 14:33:44 +0100
+Processing by PagesController#lieu as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/lieu.html.erb within layouts/application
+  Rendered pages/lieu.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 9204)
+Completed 200 OK in 14ms (Views: 14.1ms | Allocations: 9443)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:33:46 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9227)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 9467)
+
+
+Started GET "/foods/new" for ::1 at 2023-03-08 14:33:47 +0100
+Processing by FoodsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering foods/new.html.erb within layouts/application
+  Rendered foods/new.html.erb within layouts/application (Duration: 43.2ms | Allocations: 25644)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 34390)
+Completed 200 OK in 191ms (Views: 52.2ms | ActiveRecord: 75.4ms | Allocations: 43228)
+
+
+Started GET "/affaires" for ::1 at 2023-03-08 14:34:01 +0100
+Processing by PagesController#affaires as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/affaires.html.erb within layouts/application
+  Rendered pages/affaires.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 51)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 9170)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 9443)
+
+
+Started GET "/food" for ::1 at 2023-03-08 14:34:01 +0100
+Processing by PagesController#food as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/food.html.erb within layouts/application
+  Rendered pages/food.html.erb within layouts/application (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 42)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 9249)
+Completed 200 OK in 15ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 9491)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6717871542242810145)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddNameToFood (20230308133616)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.8ms)[0m  [1m[35mALTER TABLE "foods" ADD "name" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230308133616"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6717871542242810145)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
