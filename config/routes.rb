@@ -16,11 +16,6 @@ Rails.application.routes.draw do
   resources :voitures
   resources :foods
 
-  # scope path: "/food" do
-  #   resources :food
-  # end
-
-
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

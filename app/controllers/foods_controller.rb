@@ -6,6 +6,7 @@ class FoodsController < ApplicationController
   end
 
   def show
+    @foods = Food.all
     @food = Food.find(params[:id])
   end
 

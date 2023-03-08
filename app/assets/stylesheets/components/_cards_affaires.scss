@@ -2,10 +2,9 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  margin: 10px;
-  padding: 9px;
+  // margin: 10px;
+  // padding: 9px;
 }
-
 
 .list-one {
   margin: 30px;
@@ -13,43 +12,6 @@
   padding: 50px 0px 5px 21px;
   background-color: $lightgreen;
   border-radius: 5px;
-
-    // .rect {
-    //   width: 490px;
-    //   display: block;
-    //   background-color: #344A3C;
-    //   padding: 45px;
-    //   margin: -33px;
-    //   border-radius: 5px;
-    //   text-align: center;
-    // }
-
-  // ul {
-  //   display: grid;
-  //   grid-template-columns: auto auto auto;
-  //   justify-content: center;
-  // }
-
-  // li {
-  //   height: 150px;
-  //   width: 150px;
-  //   border-radius: 50%;
-  //   border: 1px solid;
-  //   padding: 45px;
-  //   background-color: white;
-  //   margin: 5px;
-  //   text-align: center;
-  // }
-}
-
-.rect {
-  width: 490px;
-  display: block;
-  background-color: $green;
-  padding: 45px;
-  margin: -33px;
-  border-radius: 5px;
-  text-align: center;
 }
 
 .list-two {
@@ -58,5 +20,59 @@
   padding: 50px 0px 5px 21px;
   background-color: $lightgreen;
   border-radius: 5px;
+}
+
+.rect {
+  width: 490px;
+  background-color: $green;
+  padding: 45px;
+  margin: -33px;
+  border-radius: 5px;
+  text-align: center;
 
 }
+
+// CARDS FOODS PAGE
+// HOVER
+  .card-lists-food {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 9px;
+
+    a {
+      justify-content: center;
+      align-items: center;
+    }
+    .list-one, .list-two, .rect {
+      height: 200px;
+
+    }
+
+    .rect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a:hover {
+      color: $darkgreen;
+    }
+
+    .list-one:hover {
+      background-color: $green;
+
+      .rect {
+        background-color: $lightgreen;
+      }
+    }
+
+    .list-two:hover {
+      background-color: $green;
+      .rect {
+        background-color: $lightgreen;
+      }
+    }
+  }

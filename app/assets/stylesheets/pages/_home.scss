@@ -13,7 +13,7 @@
 .my-container {
   max-width: 100%;
   margin: 0 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 70px;
   display: flex;
   flex-direction: column;
@@ -21,15 +21,15 @@
 
 }
 
-
   a {
     text-decoration: none;
     color: $darkgreen;
   }
 
-
   h1 {
-    font-size: 80px;
+    // Marge négative a cause de l'espace, viens d'autre part?
+    margin-top: -15px;
+    font-size: 70px;
     text-align: center;
     pointer-events: none;
   }
