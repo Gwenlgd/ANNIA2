@@ -1,18 +1,18 @@
-    <h2>Je viens en voiture</h2>
-      <div class="form-trajet">
-        <div class="col-one">
-        <%= simple_form_for(@voiture, data: {turbo: false}) do |f| %>
-          <%= f.input :nom, label: "Quel est ton prénom/nom ?" %>
-          <%= f.input :ville, label: "D'où pars-tu ?" %>
-          <%= f.input :nb_place, label: "As-tu de la place pour des passager? Merci d'indiquer combien ?" %>
-          <%= f.input :lieu_rdv, label: "Si tu as de la place, où penses-tu donner le point de rendez-vous ? " %>
-        </div>
-        <div class="col-two">
-          <%= f.input :date_aller, as: :date, html5: true, label: "Quel jour arrives-tu ?"  %>
-          <%= f.input :heure_aller, as: :time, html5: true, label: "A quelle heure prévois-tu d'arriver ? (approximativement)" %>
-          <%= f.input :date_retour, as: :date, html5: true, label: "Quel jour repars-tu ?" %>
-          <%= f.input :heure_retour, as: :time, html5: true, label: "A quelle heure penses-tu repartir ?" %>
-        </div>
-      </div>
-        <%= f.button :submit, class: "btn-submit-form", value: "Confirmer"%>
-      <% end %>
+<h2>Je viens en voiture</h2>
+  <div class="form-trajet">
+    <div class="col-one">
+    <%= simple_form_for(@voiture, data: {turbo: false}) do |f| %>
+      <%= f.input :nom, label: "Quel est ton prénom/nom ?" %>
+      <%= f.input :ville, label: "D'où pars-tu ?" %>
+      <%= f.input :nb_place, label: "As-tu de la place pour des passager? Merci d'indiquer combien ?" %>
+      <%= f.input :lieu_rdv, label: "Si tu as de la place, où penses-tu donner le point de rendez-vous ? " %>
+    </div>
+    <div class="col-two">
+      <%= f.input :date_aller, as: :date, html5: true, label: "Quel jour arrives-tu ?"  %>
+      <%= f.input :heure_aller, as: :time, html5: true, label: "A quelle heure prévois-tu d'arriver ? (approximativement)" %>
+      <%= f.input :date_retour, as: :date, html5: true, label: "Quel jour repars-tu ?" %>
+      <%= f.input :heure_retour, as: :time, html5: true, label: "A quelle heure penses-tu repartir ?" %>
+    </div>
+      <%= f.button :submit, class: "btn-submit-form", value: "Confirmer"%>
+    <% end %>
+  </div>

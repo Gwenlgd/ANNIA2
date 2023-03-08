@@ -26,6 +26,6 @@ class VoituresController < ApplicationController
   end
 
   def voiture_params
-    params.require(:voiture).permit(:nom, :ville, :lieu_rdv, :nb_place, :heure_aller, :date_aller, :heure_retour, :date_retour)
+    params.require(:voiture).permit(:nom, :ville, :lieu_rdv, :nb_place, :date_aller, :heure_aller, :date_retour, :heure_retour)
   end
 end
