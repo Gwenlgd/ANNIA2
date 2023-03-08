@@ -1,8 +1,17 @@
-  <div class="form-trajet">
+  <div class="form-food">
+    <div class="form-food-size">
       <%= simple_form_for(@food, data: {turbo: false}) do |f| %>
-        <%= f.input :contraintes, collection: ["Non", "Allergies", "Végératien", "Vegan"], label: "As-tu des contraintes alimentaires ?" %>
+        <%= f.input :nom, label: "Prénom/Nom?" %>
+        <%= f.input :contraintes, as: :radio_buttons,
+            collection_wrapper_tag: 'div',
+            collection_wrapper_class: 'category-wrapper',
+            item_wrapper_class: 'category-item',
+            input_html: {class: 'category-selector'},
+            collection: ["Non", "Allergies", "Végératien", "Vegan", "Flexitarien", "Sans Gluten",],
+            label: "As-tu des contraintes alimentaires ?" %>
         <%= f.input :bring, label: "Que vas-tu nous ramener de bon?" %>
-        <%= f.input :quantites, label: "Pour combien de personnes (environ)?" %>
+        <%= f.input :parts, label: "Pour combien de personne (environ)?" %>
         <%= f.button :submit, class: "btn-submit-form", value: "Confirmer"%>
       <% end %>
+    </div>
   </div>
