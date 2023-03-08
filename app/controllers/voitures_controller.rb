@@ -1,5 +1,9 @@
 class VoituresController < ApplicationController
 
+  def food
+
+  end
+
   def index
     @voitures = Voiture.all
   end

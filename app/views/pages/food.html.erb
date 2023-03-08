@@ -1,6 +1,19 @@
-  <h2>FOOD (IN PAGES)</h2>
 
+    <div class="card-lists-food">
+      <div class="list-one">
+        <div class="rect">
+          <%= link_to new_food_path do %>
+            <h3>Le questionnaire Food</h3>
+          <% end %>
+        </div>
+      </div>
 
-      <%= link_to new_food_path do %>
-        <p>Dis nous en plus</p>
-      <% end %>
+      <div class="list-two">
+        <div class="rect">
+          <%= link_to foods_path do %>
+            <h3>Liste de ce qui sera ramené (trouver un autre titre)</h3>
+          <% end %>
+        </div>
+      </div>
+    </div>
+<%# Système de likes pour que les gens disent s'ils ont %>
