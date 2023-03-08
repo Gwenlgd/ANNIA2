@@ -14,7 +14,7 @@
       <% end %>
     </div>
     <div class="card-category">
-      <%= link_to new_voiture_path do %>
+      <%= link_to new_train_path do %>
         <i class="fa-solid fa-train-subway"></i>
         <p>Train</p>
       <% end %>
@@ -26,11 +26,10 @@
 <%# Formule où on voit les trajets des gens %>
 
 
+  <%= link_to voitures_path do %>
+    <p>Tous les trajets en voiture (index)</p>
+  <% end %>
 
   <%= link_to trains_path do %>
     <p>Tous les trajets en train (index)</p>
-  <% end %>
-
-  <%= link_to voitures_path do %>
-    <p>Tous les trajets en voiture (index)</p>
   <% end %>
