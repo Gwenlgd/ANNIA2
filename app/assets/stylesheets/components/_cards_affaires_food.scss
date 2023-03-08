@@ -6,21 +6,15 @@
   // padding: 9px;
 }
 
-.list-one {
+.list-one, .list-two {
   margin: 30px;
   width: 500px;
   padding: 50px 0px 5px 21px;
   background-color: $lightgreen;
   border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.list-two {
-  margin: 30px;
-  width: 500px;
-  padding: 50px 0px 5px 21px;
-  background-color: $lightgreen;
-  border-radius: 5px;
-}
 
 .rect {
   width: 490px;
@@ -46,12 +40,13 @@
       justify-content: center;
       align-items: center;
     }
-    .list-one, .list-two, .rect {
+    .list-one, .list-two {
       height: 200px;
-
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
 
     .rect {
+      height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -66,13 +61,21 @@
 
       .rect {
         background-color: $lightgreen;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
       }
     }
 
     .list-two:hover {
       background-color: $green;
+
       .rect {
         background-color: $lightgreen;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
       }
     }
+  }
+
+  .card-list-food-que {
+    display: flex;
+    justify-content: center;
   }
