@@ -2,8 +2,27 @@
 
 <p>ne montrer que les trajets avec covoit possible</p>
 
-  <div class="all-cards">
-    <% @voitures.each do |voiture|  %>
+<div class="all-cards">
+  <% @voitures_covoit.each do |covoit| %>
+      <div class="cards-trajet">
+        <ul><%= covoit.nom %></ul>
+        <ul><%= covoit.ville %></ul>
+        <ul><%= covoit.lieu_rdv %></ul>
+        <ul><%= covoit.nb_place %></ul>
+        <ul><%= covoit.heure_aller %></ul>
+        <ul><%= covoit.date_aller %></ul>
+        <ul><%= covoit.heure_retour %></ul>
+        <ul><%= covoit.date_retour %></ul>
+        <br> <br>
+      </div>
+    <% end %>
+  </div>
+
+
+<h3>Tous les autres trajets</h3>
+
+<div class="all-cards">
+  <% @autres_voitures.each do |voiture| %>
       <div class="cards-trajet">
         <ul><%= voiture.nom %></ul>
         <ul><%= voiture.ville %></ul>

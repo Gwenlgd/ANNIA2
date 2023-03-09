@@ -1,11 +1,9 @@
 class VoituresController < ApplicationController
 
-  def food
-
-  end
-
   def index
     @voitures = Voiture.all
+    @voitures_covoit = Voiture.where.not(nb_place: "0").order(ville: :asc)
+    @autres_voitures = Voiture.where(nb_place: "0").order(ville: :asc)
   end
 
   def show
